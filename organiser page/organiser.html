@@ -26,11 +26,12 @@
     <title>organiser</title>
   </head>
   <body>
+    <!-- top -->
     <div class="clearfix title-div py-4 px-3">
-      <div class="float-start"><h3>Event Mgmt</h3></div>
+      <div class="float-start"><h3>EMS</h3></div>
       <div class="float-end">
         <span>
-          <i class="fa fa-user-circle icon me-sm-3" aria-hidden="true"></i
+          <i class="fa fa-user-circle icon me-sm-1" aria-hidden="true"></i
           >Organiser
         </span>
         <span class="ms-sm-4"
@@ -38,7 +39,9 @@
         /></span>
       </div>
     </div>
+    <!-- nav bar -->
     <div class="container">
+      <!-- elements in the nav bar -->
       <ul class="nav nav-tabs mt-3" id="myTab" role="tablist">
         <li class="nav-item pe-sm-3" role="presentation">
           <button
@@ -68,6 +71,34 @@
             schedule
           </button>
         </li>
+        <li class="nav-item pe-sm-3" role="presentation">
+          <button
+            class="nav-link"
+            id="inform-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#inform-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="inform-tab-pane"
+            aria-selected="false"
+          >
+            Inform
+          </button>
+        </li>
+        <li class="nav-item pe-sm-3" role="presentation">
+          <button
+            class="nav-link"
+            id="report-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#report-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="report-tab-pane"
+            aria-selected="false"
+          >
+            Report
+          </button>
+        </li>
       </ul>
       <div class="tab-content" id="myTabContent">
         <div
@@ -77,7 +108,8 @@
           aria-labelledby="home-tab"
           tabindex="0"
         >
-          <div class="card box-card">
+          <!--div of content of the requests -->
+          <div class="card box-card mt-3">
             <div class="card-body">
               <h5 class="card-title">Event 1</h5>
               <p class="card-text">
@@ -88,17 +120,25 @@
                 href="#"
                 class="btn btn-primary text-end"
                 data-bs-toggle="modal"
-                data-bs-target="#myModal9"
+                data-bs-target="#myModal1"
                 >Show Details</a
               >
-              <div class="text-end">
+              <!-- <div class="text-end">
                 <a href="#" class="btn btn-danger text-end">Decline</a>
                 <a href="#" class="btn btn-success text-end">Approve</a>
+              </div> -->
+              <div class="clearfix">
+                <a href="#" class="btn btn-success float-sm-end mt-3"
+                  >Approve</a
+                >
+                <a href="#" class="btn btn-danger float-sm-end mt-3 me-2"
+                  >Decline</a
+                >
               </div>
             </div>
             <div
               class="modal fade"
-              id="myModal9"
+              id="myModal1"
               tabindex="-1"
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
@@ -107,7 +147,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">
-                      Event Test 9
+                      Event 1
                     </h1>
                     <button
                       type="button"
@@ -139,7 +179,230 @@
                     >
                       Close
                     </button>
-                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--div of content of the requests -->
+          <div class="card box-card mt-3">
+            <div class="card-body">
+              <h5 class="card-title">Event 2</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary text-end"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal2"
+                >Show Details</a
+              >
+              <div class="clearfix">
+                <a href="#" class="btn btn-success float-sm-end mt-3"
+                  >Approve</a
+                >
+                <a href="#" class="btn btn-danger float-sm-end mt-3 me-2"
+                  >Decline</a
+                >
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="myModal2"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Event 2
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Possimus vitae ratione harum, magnam sint et quis iure
+                    dolor! Ea incidunt debitis numquam, eius non odit vero fugit
+                    impedit cupiditate reiciendis reprehenderit fuga, doloribus
+                    beatae, esse repellendus? Cum odio commodi sunt, hic, in
+                    voluptates dolorum ut facere similique tenetur accusamus
+                    quaerat dolores facilis! Optio a non provident laboriosam
+                    explicabo ipsa mollitia voluptas inventore eos atque.
+                    Quisquam sint suscipit quod commodi exercitationem eum
+                    aliquid asperiores maiores, quasi velit, quo qui vel officia
+                    ad doloremque illum, eligendi magnam? Ea consectetur nostrum
+                    ipsam ipsa odio veniam tenetur at distinctio explicabo.
+                    Facere ullam beatae laboriosam.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--div of content of the requests -->
+          <div class="card box-card mt-3">
+            <div class="card-body">
+              <h5 class="card-title">Event 3</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary text-end"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal3"
+                >Show Details</a
+              >
+              <!-- <div class="text-end">
+                <a href="#" class="btn btn-danger text-end">Decline</a>
+                <a href="#" class="btn btn-success text-end">Approve</a>
+              </div> -->
+              <div class="clearfix">
+                <a href="#" class="btn btn-success float-sm-end mt-3"
+                  >Approve</a
+                >
+                <a href="#" class="btn btn-danger float-sm-end mt-3 me-2"
+                  >Decline</a
+                >
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="myModal3"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Event 3
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Possimus vitae ratione harum, magnam sint et quis iure
+                    dolor! Ea incidunt debitis numquam, eius non odit vero fugit
+                    impedit cupiditate reiciendis reprehenderit fuga, doloribus
+                    beatae, esse repellendus? Cum odio commodi sunt, hic, in
+                    voluptates dolorum ut facere similique tenetur accusamus
+                    quaerat dolores facilis! Optio a non provident laboriosam
+                    explicabo ipsa mollitia voluptas inventore eos atque.
+                    Quisquam sint suscipit quod commodi exercitationem eum
+                    aliquid asperiores maiores, quasi velit, quo qui vel officia
+                    ad doloremque illum, eligendi magnam? Ea consectetur nostrum
+                    ipsam ipsa odio veniam tenetur at distinctio explicabo.
+                    Facere ullam beatae laboriosam.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--div of content of the requests -->
+          <div class="card box-card mt-3">
+            <div class="card-body">
+              <h5 class="card-title">Event 4</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary text-end"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal4"
+                >Show Details</a
+              >
+              <!-- <div class="text-end">
+                <a href="#" class="btn btn-danger text-end">Decline</a>
+                <a href="#" class="btn btn-success text-end">Approve</a>
+              </div> -->
+              <div class="clearfix">
+                <a href="#" class="btn btn-success float-sm-end mt-3"
+                  >Approve</a
+                >
+                <a href="#" class="btn btn-danger float-sm-end mt-3 me-2"
+                  >Decline</a
+                >
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="myModal4"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Event 4
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Possimus vitae ratione harum, magnam sint et quis iure
+                    dolor! Ea incidunt debitis numquam, eius non odit vero fugit
+                    impedit cupiditate reiciendis reprehenderit fuga, doloribus
+                    beatae, esse repellendus? Cum odio commodi sunt, hic, in
+                    voluptates dolorum ut facere similique tenetur accusamus
+                    quaerat dolores facilis! Optio a non provident laboriosam
+                    explicabo ipsa mollitia voluptas inventore eos atque.
+                    Quisquam sint suscipit quod commodi exercitationem eum
+                    aliquid asperiores maiores, quasi velit, quo qui vel officia
+                    ad doloremque illum, eligendi magnam? Ea consectetur nostrum
+                    ipsam ipsa odio veniam tenetur at distinctio explicabo.
+                    Facere ullam beatae laboriosam.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
                   </div>
                 </div>
               </div>
@@ -153,24 +416,459 @@
           aria-labelledby="profile-tab"
           tabindex="0"
         >
+          <form class="my-4">
+            <div class="mb-3">
+              <label for="input-group-text" class="form-label"
+                >Name of the Event</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleEvent"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="inputGroupSelect01"
+                >Type of the event</label
+              >
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">Type 1</option>
+                <option value="2">Type 2</option>
+                <option value="3">Type 3</option>
+                <option value="3">others</option>
+              </select>
+            </div>
+            <div class="form-outline mb-3">
+              <label class="form-label" for="typeNumber"
+                >Number of the participants</label
+              >
+              <input
+                type="number"
+                id="typeNumber"
+                min="50"
+                max="2000"
+                class="form-control"
+              />
+            </div>
+            <div
+              id="date-picker-example"
+              class="md-form md-outline input-with-post-icon datepicker mb-3"
+              inline="true"
+            >
+              <label for="example">Date</label>
+              <input
+                placeholder="Select date"
+                type="date"
+                class="form-control"
+              />
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <label for="appt">Time In:</label>
+                <input class="form-control" type="time" id="appt" name="appt" />
+              </div>
+              <div class="col">
+                <label for="appt">Time out:</label>
+                <input class="form-control" type="time" id="appt" name="appt" />
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="inputGroupSelect01"
+                >Venue</label
+              >
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">venue 1</option>
+                <option value="2">venue 2</option>
+                <option value="3">venue 3</option>
+              </select>
+            </div>
+            <div class="mb-3 mt-5">
+              <p>Refreshments</p>
+              <div class="row justify-content-between">
+                <div class="col-lg-6">
+                  <div
+                    class="mb-3 d-flex align-items-center justify-content-between"
+                  >
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="item-1"
+                        id="item-1"
+                      />
+                      <label class="form-check-label" for="item-1"
+                        >Item 1</label
+                      >
+                    </div>
+                    <div class="col-sm-auto col-4">
+                      <input
+                        class="form-control"
+                        type="number"
+                        name="count-1"
+                        id="count-1"
+                        placeholder="Count"
+                        min="0"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="mb-3 d-flex align-items-center justify-content-between"
+                  >
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="item-2"
+                        id="item-2"
+                      />
+                      <label class="form-check-label" for="item-2"
+                        >Item 2</label
+                      >
+                    </div>
+                    <div class="col-sm-auto col-4">
+                      <input
+                        class="form-control"
+                        type="number"
+                        name="count-2"
+                        id="count-2"
+                        placeholder="Count"
+                        min="0"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="mb-3 d-flex align-items-center justify-content-between"
+                  >
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="item-3"
+                        id="item-3"
+                      />
+                      <label class="form-check-label" for="item-3"
+                        >Item 3</label
+                      >
+                    </div>
+                    <div class="col-sm-auto col-4">
+                      <input
+                        class="form-control"
+                        type="number"
+                        name="count-3"
+                        id="count-3"
+                        placeholder="Count"
+                        min="0"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="mb-3 d-flex align-items-center justify-content-between"
+                  >
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="item-4"
+                        id="item-4"
+                      />
+                      <label class="form-check-label" for="item-4"
+                        >Item 4</label
+                      >
+                    </div>
+                    <div class="col-sm-auto col-4">
+                      <input
+                        class="form-control"
+                        type="number"
+                        name="count-4"
+                        id="count-4"
+                        placeholder="Count"
+                        min="0"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="my-3 col-lg-5">
+                  <label for="notes" class="form-label">Notes</label>
+                  <textarea
+                    class="form-control"
+                    id="notes"
+                    name="notes"
+                    rows="7"
+                    placeholder="Notes"
+                  ></textarea>
+                </div> -->
+              </div>
+            </div>
+            <div class="mb-3" style="text-align: end">
+              <input
+                class="btn btn-danger px-4 mx-sm-5"
+                type="button"
+                value="Review"
+              />
+              <input
+                class="btn btn-success px-4 mx-sm-5"
+                type="submit"
+                value="submit"
+              />
+            </div>
+          </form>
         </div>
         <div
           class="tab-pane fade"
-          id="contact-tab-pane"
+          id="inform-tab-pane"
           role="tabpanel"
-          aria-labelledby="contact-tab"
+          aria-labelledby="inform-tab"
           tabindex="0"
         >
-          ...
+          <form class="my-4">
+            <div class="mb-3">
+              <label for="input-group-text" class="form-label"
+                >Name of the Event</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleEvent"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <div class="row justify-content-between">
+                <div class="col-lg-6">
+                  <p>Select the groups</p>
+                  <div
+                    class="mb-3 d-flex align-items-center justify-content-between"
+                  >
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="group-1"
+                        id="group-1"
+                      />
+                      <label class="form-check-label" for="group-1"
+                        >Group 1</label
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="mb-3 d-flex align-items-center justify-content-between"
+                  >
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="group-2"
+                        id="group-2"
+                      />
+                      <label class="form-check-label" for="group-2"
+                        >Group 2</label
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="mb-3 d-flex align-items-center justify-content-between"
+                  >
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="group-3"
+                        id="group-3"
+                      />
+                      <label class="form-check-label" for="group-3"
+                        >Group 3</label
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="mb-3 d-flex align-items-center justify-content-between"
+                  >
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="group-4"
+                        id="group-4"
+                      />
+                      <label class="form-check-label" for="group-4"
+                        >Group 4</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <label for="notes" class="form-label">Type the message</label>
+                  <textarea
+                    class="form-control"
+                    id="notes"
+                    name="notes"
+                    rows="7"
+                    placeholder="message here...."
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5" style="text-align: end">
+              <input
+                class="btn btn-primary px-4 mx-sm-5"
+                type="button"
+                value="Notify selected"
+              />
+              <input
+                class="btn btn-primary px-4 mx-sm-5"
+                type="button"
+                value="Notify All"
+              />
+            </div>
+          </form>
         </div>
         <div
           class="tab-pane fade"
-          id="disabled-tab-pane"
+          id="report-tab-pane"
           role="tabpanel"
-          aria-labelledby="disabled-tab"
+          aria-labelledby="report-tab"
           tabindex="0"
         >
-          ...
+          <div class="container my-4">
+            <h2 class="my-4">Filter Reports</h2>
+            `
+            <div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Name of the Event"
+                aria-label="Name of the Event"
+              />
+              <div class="row">
+                <div class="my-2 col-lg-7">
+                  <div class="input-group">
+                    <span class="input-group-text">From date</span>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="date-from"
+                      name="date-from"
+                    />
+                    <span class="input-group-text">To date</span>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="date-to"
+                      name="date-to"
+                    />
+                  </div>
+                </div>
+                <div class="my-2 col-lg-auto align-self-center">(OR)</div>
+                <div class="my-2 col-lg-3">
+                  <div class="input-group">
+                    <span class="input-group-text">Year</span>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="date-year"
+                      name="date-year"
+                      min="2020"
+                      max="9999"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="my-2 col-lg-4">
+                  <div class="input-group">
+                    <label for="desc" class="input-group-text"
+                      >Event Type</label
+                    >
+                    <select
+                      class="form-select"
+                      aria-label="Type of Event"
+                      name="type"
+                      id="type"
+                    >
+                      <option selected>-- Select --</option>
+                      <option value="1">General</option>
+                      <option value="2">Meeting</option>
+                      <option value="3">Fest</option>
+                      <option value="4">Workshop</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="my-2 col-lg-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search Keywords"
+                    aria-label="Search keywords"
+                  />
+                </div>
+                <div class="my-2 col-lg-4">
+                  <button class="btn btn-primary">Search</button>
+                </div>
+              </div>
+            </div>
+            <h3 class="my-4">Search Results</h3>
+            <div class="table my-4" style="overflow-x: auto">
+              <table class="table table-hover" style="min-width: 600px">
+                <thead>
+                  <tr>
+                    <th scope="col">S.No.</th>
+                    <th scope="col">Event name</th>
+                    <th scope="col">Event Type</th>
+                    <th scope="col">Event Description</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Event 1</td>
+                    <td>Meeting</td>
+                    <td class="desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ex repudiandae odit, pariatur velit ipsam sed voluptas
+                      quisquam quae maxime fuga nemo enim ad autem tempore non!
+                      Velit deleniti animi exercitationem.
+                    </td>
+                    <td>
+                      <button class="btn btn-primary m-1">
+                        <i class="fa fa-info-circle"></i> Details
+                      </button>
+                      <button class="btn btn-success m-1">
+                        <i class="fa fa-download"></i> Download
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Event 2</td>
+                    <td>Workshop</td>
+                    <td class="desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ex repudiandae odit, pariatur velit ipsam sed voluptas
+                      quisquam quae maxime fuga nemo enim ad autem tempore non!
+                      Velit deleniti animi exercitationem.
+                    </td>
+                    <td>
+                      <button class="btn btn-primary m-1">
+                        <i class="fa fa-info-circle"></i> Details
+                      </button>
+                      <button class="btn btn-success m-1">
+                        <i class="fa fa-download"></i> Download
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </div>
